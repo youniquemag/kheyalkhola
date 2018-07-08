@@ -1,0 +1,281 @@
+* {box-sizing:border-box}
+
+header {
+}
+
+body {
+	background-color: black;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 1px;
+}
+main{
+	
+}
+
+h1{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	color: #dedce2;
+}
+
+.body-text {
+	color: white;
+	text-align: center;
+	padding: 5%;
+	padding-bottom: 10%;
+}
+
+.body-text img {
+	width: 60px;
+	padding: 1%;
+}
+
+.body-text a {
+	text-decoration: none;
+	color: white;
+}
+
+.top-bar {
+	color: white;
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-left: 0%;
+	padding-right: 0%;
+	text-align: center;
+	width: 100%;
+	margin-right: 0px;
+}
+
+.topbar ul {
+	text-align: center;
+	list-style: none;
+	padding: 0pxs;
+}
+.top-bar ul li {
+	display: inline-block;
+	 width: 50%;
+	 min-width: 72px;
+}
+
+.top-bar ul li a {
+	min-width: 72px;
+}
+.top-bar ul li a img {
+	max-width: 320px;
+	width: 100%;
+}
+
+.ymg {
+    
+	color: white;
+	font-size: 100%;
+}
+
+.logo {
+	width: 10%;
+}
+
+.pages {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0px 5px 2px #473939;
+}
+
+
+.pages li {
+    float: left;
+}
+
+.pages li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.pages li a:hover:not(.active) {
+    background-color: #111;
+    box-shadow: 0px 4px 2px rgb(17, 17, 17);
+}
+
+.active {
+background-color:#4CAF50;
+}
+
+.dropdown-C {
+	float: left;
+    padding-left: 0.7%;
+    display: inline-block;
+}
+
+.dropdown-items-C {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown-items-C a {
+	display: block;
+	background-color: rgba(79, 80, 89, 0.75);
+	color: black;
+	text-shadow: -2px 2px 2px #111;
+}
+
+.dropdown-C:hover .dropdown-items-C {
+	display: block;
+	color: black;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  height: 800px;
+  padding-top: 5%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.column a img {
+  margin-top: 10%;
+  vertical-align: middle;
+  width: 200px;
+  display: inline-block;
+}
+
+.backstage-container {
+	text-align: center;
+	padding: 10%;
+	margin-bottom: 10%;
+	margin-top: 10%;
+	background-color: #171515c9;
+	border-radius: 2%;
+}
+
+.backstage-container img {
+	height: 100%;
+	width: 100%;
+	border-radius: 5%;
+	box-shadow: -3px 3px 3px black;
+	border-width: 5px;
+	border-style: solid;
+}
+
+.prev-next {
+	padding: 5%;
+}
+
+.prev-next button{
+	border-radius: 10%;
+	padding: 2%;
+	background-color: #f3eeea;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #212529;
+	box-shadow: -3px 3px 3px black;
+}
+
+.prev-next button:hover{
+	box-shadow: -2px 2px 2px black;
+	background-color: #ccc8c5;
+}
+
+footer {
+  padding-top: 1%;
+	background-color: black;
+	color: white;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+footer table {
+	width: 100%;
+	text-align: center;
+	margin-right: 100px;
+}
+
+footer table tr td a {
+	color: white;
+	text-decoration: none !important;
+}
+footer table tr td a img {
+	max-height: 35px;
+	padding: 1%;
+	font-size: 1em;
+}
+
+/* media queries*/
+
+@media only screen and (max-width: 800px) {
+	.ymg {
+		font-size: 80%;
+	}
+	.insideNiche{
+		padding-bottom: 10%;
+	}
+	.column {
+	    flex: 50%;
+	    max-width: 50%;
+	}
+	footer {
+		font-size:0.8em;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.ymg {
+		font-size: 60%;
+	}
+	.column {
+	    flex: 100%;
+	    max-width: 100%;
+    }
+	footer {
+		font-size:0.6em;
+		height: auto;
+	}
+}

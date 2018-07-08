@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Kheyalkhola</title>
+    <link rel="icon" href="../../images/favicon.ico">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <!-- CUSTOM STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Gamja+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/my_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Atma|Courgette|Galada|Josefin+Sans:600|Kalam" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <div class="navbar-brand top-bar">
+      <ul style="padding: 0px;">
+        <li><a href="home.html"><img src="images/logo_kk.jpg" style="width: 50%;"></a></li>
+        <li><a href="#"><img src="images/kk.jpg" style="width: 100%;"></a></li>
+      </ul>
+    </div>
+
+    <section>
+          <ul class="pages">
+            <li><a href="../../home.html">About Us</a></li>
+            <li class="dropdown-C"><a href="../../productions.html">Our Productions</a>
+              <div class="dropdown-items-C">
+                <a href="After.html">A Journey with Surpakhanakha</a>
+                <a href="After.html">Bitonko</a>
+                <a href="After.html">Iti Bratyakatha</a>
+                <a href="After.html">Kata Tarpar</a>
+                <a href="After.html">Rudra Basanta</a>
+                <a href="After.html">Ring</a>
+                <a href="After.html">Sneher Thakurpo</a>
+                <a href="After.html">Streer Potro</a>
+                <a href="After.html">Harun-al Rashid</a>
+              </div>
+            </li>
+            <li><a href="../../home.html">Backstage and Rehearsals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+    </section>
+
+    <main>
+      <div class="container">
+        <h1>Backstage and Rehearsals</h1>
+        <div class="backstage-container">
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="images/backstage/1.jpg">
+            <img class="mySlides" src="images/backstage/2.jpg">
+            <img class="mySlides" src="images/backstage/3.jpg">
+            <img class="mySlides" src="images/backstage/4.jpg">
+            <img class="mySlides" src="images/backstage/5.jpg">
+            <img class="mySlides" src="images/backstage/6.jpg">
+            <img class="mySlides" src="images/backstage/7.jpg">
+            <img class="mySlides" src="images/backstage/8.jpg">
+            <img class="mySlides" src="images/backstage/9.jpg">
+            <div class="w3-center prev-next">
+              <button class="w3-button" style="float: left;" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button" style="float: right;" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div>
+      <footer>
+        <table>
+          <tr>
+            <td><a href="facebook.com/youniquemag123"><img src="images/fb_logo.png"> Kheyalkhola</a></td>
+            <td><a href="#"><img src="images/email_logo.png"> kheyalkhola.uttarpara@gmail.com</a></td>
+            <td><a href="facebook.com/youniquemag123"><img src="images/fb_logo.png"></a>&nbsp;&nbsp;<a href="facebook.com/youniquemag123"><img src="images/insta_logo.png"> Youniquemag</a></td>
+          </tr>
+        </table>
+      </footer>
+    </div>
+
+    <!--JS-->
+    </script>
+    <script type="text/javascript">
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+          showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = x.length} ;
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none"; 
+          }
+          x[slideIndex-1].style.display = "inline-block"; 
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+
+
+</html>
